@@ -1,12 +1,22 @@
 import random
 
 
-def choose_word():
+def choose_word(category):
     """
-    Function to choose a random word from the list
+    Dictionary containing words for each category
     """
-    words = ['apple', 'banana', 'orange', 'grape', 'strawberry', 'melon']
-    return random.choice(words)
+    word_dict = {
+        1: ['leopard', 'turtle', 'rabbit', 'elephant', 'giraffe', 'tiger'],
+        2: ['soccer', 'basketball', 'tennis', 'swimming', 'snowboarding', 'boxing'],
+        3: ['pizza', 'hamburger', 'sushi', 'pasta', 'steak', 'salad'],
+        4: ['coffee', 'milkshake', 'juice', 'lemonade', 'water', 'smoothie'],
+        5: ['guitar', 'piano', 'violin', 'trumpet', 'drums', 'flute'],
+        6: ['brown', 'white', 'green', 'yellow', 'orange', 'purple'],
+        7: ['apple', 'banana', 'orange', 'grape', 'strawberry', 'melon'],
+        8: ['doctor', 'engineer', 'teacher', 'artist', 'nurse', 'scientist']
+    }
+
+    return random.choice(word_dict[category])
 
 
 def display_word(word, guessed_letters):
@@ -87,19 +97,54 @@ def display_hangman(attempts):
         """
     ]
     
-    return stages[attempts]
+    
+    if attempts >= 1:
+        # Adjusted index to match attempts left
+        return stages[attempts-1]
+    else:
+        return stages[0]
 
 
 def hangman():
     """
     Main game function
     """
-    word = choose_word()
+    # List of tuples containing categories and their corresponding names
+    categories = [
+        (1, 'Animal'),
+        (2, 'Sport'),
+        (3, 'Food'),
+        (4, 'Drink'),
+        (5, 'Musical Instrument'),
+        (6, 'Color'),
+        (7, 'Fruit'),
+        (8, 'Profession')
+    ]
+
+    # Prompt player to choose a category
+    print('Welcome to The Hangman Game!\nChoose a category to play:')
+    for category in categories:
+        print(f'{category[0]}. {category[1]}')
+
+    while True:
+      category_choice = input('Enter the number corresponding to the category: ')
+
+      # Validate category choice
+      valid_choices = [str(category[0]) for category in categories]
+      if category_choice not in valid_choices:
+         print('\nInvalid category choice. Please enter a valid category number.')
+         continue
+
+      category_choice = int(category_choice)
+      break
+
+    word = choose_word(category_choice)
     guessed_letters = []
     attempts = 6
 
-    print('Welcome to The Hangman Game!')
     print(display_hangman(attempts))
+    print("Let's play!")
+    print(f'\nCategory: {categories[category_choice-1][1]}')  # Adjust index for category choice
     print(display_word(word, guessed_letters))
 
     while True:
@@ -112,7 +157,7 @@ def hangman():
 
         if guess in guessed_letters:
             # Check if the letter has already been guessed
-            print('You have already guessed that letter.')
+            print("You've already guessed that letter.")
             continue
 
         guessed_letters.append(guess)
@@ -126,19 +171,17 @@ def hangman():
                 print(f'The word was: {word}')
                 break
             else:
-                # Otherwise show the number of attempts remaining
                 print(display_hangman(attempts))
                 print(f'Incorrect! You have {attempts} attempts left.')
         else:
-            print('Correct guess!')
+            print('Correct guess!\n')
 
         display = display_word(word, guessed_letters)
         print(display)
 
         if "_" not in display:
             # If no underscores left, player wins
-            print('You have guessed the word correctly. Congratulations!')
+            print("Congratulations! You've guessed the word correctly!")
             break
-
 
 hangman()
