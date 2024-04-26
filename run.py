@@ -120,13 +120,15 @@ def hangman():
         if guess not in word:
             # If the guessed letter is not in the word, decrement attempts
             attempts -= 1
-            print(f'Incorrect! You have {attempts} attempts left.')
-            print(display_hangman(attempts))
             if attempts == 0:
                 # If no attempts left, end the game
-                print("You've run out of attempts. Game over!")
+                print("Incorrect! You've run out of attempts. Game over!")
                 print(f'The word was: {word}')
                 break
+            else:
+                # Otherwise show the number of attempts remaining
+                print(display_hangman(attempts))
+                print(f'Incorrect! You have {attempts} attempts left.')
         else:
             print('Correct guess!')
 
