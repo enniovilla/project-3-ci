@@ -34,6 +34,9 @@ def display_word(word, guessed_letters):
     return display.strip()  # Remove trailing space at the end
 
 
+print('Welcome to The Hangman Game!')
+
+
 def display_hangman(attempts):
     """
     Function to display the hangman based on remaining attempts
@@ -121,7 +124,7 @@ def hangman():
     ]
 
     # Prompt player to choose a category
-    print('Welcome to The Hangman Game!\nChoose a category to play:')
+    print('Choose a category to play:')
     for category in categories:
         print(f'{category[0]}. {category[1]}')
 
