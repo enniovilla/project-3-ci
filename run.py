@@ -39,15 +39,15 @@ def display_hangman(attempts):
     Function to display the hangman based on remaining attempts
     """
     stages = [
-        """
+        r"""
            --------
            |      |
            |      O
            |     \|/
            |      |
-           |     / \\
+           |     / \
         """,
-        """
+        r"""
            --------
            |      |
            |      O
@@ -55,7 +55,7 @@ def display_hangman(attempts):
            |      |
            |     / 
         """,
-        """
+        r"""
            --------
            |      |
            |      O
@@ -63,7 +63,7 @@ def display_hangman(attempts):
            |      |
            |      
         """,
-        """
+        r"""
            --------
            |      |
            |      O
@@ -71,7 +71,7 @@ def display_hangman(attempts):
            |      |
            |     
         """,
-        """
+        r"""
            --------
            |      |
            |      O
@@ -79,7 +79,7 @@ def display_hangman(attempts):
            |      |
            |     
         """,
-        """
+        r"""
            --------
            |      |
            |      O
@@ -87,7 +87,7 @@ def display_hangman(attempts):
            |      
            |     
         """,
-        """
+        r"""
            --------
            |      |
            |      
