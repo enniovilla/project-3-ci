@@ -147,7 +147,7 @@ def hangman():
     print(display_word(word, guessed_letters))
 
     while True:
-        guess = input('Guess a letter: ').lower()
+        guess = input('\nGuess a letter: ').lower()
 
         if len(guess) != 1 or not guess.isalpha():
             # Check if input is a single letter
@@ -173,7 +173,7 @@ def hangman():
                 print(display_hangman(attempts))
                 print(f'Incorrect! You have {attempts} attempts left.')
         else:
-            print('Correct guess!\n')
+            print('\nCorrect guess!')
 
         display = display_word(word, guessed_letters)
         print(display)
