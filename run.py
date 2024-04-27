@@ -184,4 +184,18 @@ def hangman():
             print("Congratulations! You've guessed the word correctly!")
             break
 
+    # Ask if the player wants to play again
+    while True:
+        play_again = input("Would you like to play again? (yes/no): ").lower()
+        if play_again == 'yes' or play_again == 'no':
+            break
+        else:
+            print("Please enter 'yes' or 'no'.")
+
+    if play_again == 'yes':
+        hangman()
+    else:
+        print('Thank you for playing!')
+
+
 hangman()
