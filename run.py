@@ -97,7 +97,6 @@ def display_hangman(attempts):
         """
     ]
     
-    
     if attempts >= 1:
         # Adjusted index to match attempts left
         return stages[attempts-1]
@@ -127,16 +126,16 @@ def hangman():
         print(f'{category[0]}. {category[1]}')
 
     while True:
-      category_choice = input('Enter the number corresponding to the category: ')
+        category_choice = input('Enter the number corresponding to the category: ')
 
-      # Validate category choice
-      valid_choices = [str(category[0]) for category in categories]
-      if category_choice not in valid_choices:
-         print('\nInvalid category choice. Please enter a valid category number.')
-         continue
+        # Validate category choice
+        valid_choices = [str(category[0]) for category in categories]
+        if category_choice not in valid_choices:
+            print('\nInvalid category choice. Please enter a valid category number.')
+            continue
 
-      category_choice = int(category_choice)
-      break
+        category_choice = int(category_choice)
+        break
 
     word = choose_word(category_choice)
     guessed_letters = []
@@ -186,13 +185,14 @@ def hangman():
 
     # Ask if the player wants to play again
     while True:
-        play_again = input("Would you like to play again? (yes/no): ").lower()
+        play_again = input('Would you like to play again? (yes/no): ').lower()
         if play_again == 'yes' or play_again == 'no':
             break
         else:
             print("Please enter 'yes' or 'no'.")
 
     if play_again == 'yes':
+        print('\n')
         hangman()
     else:
         print('Thank you for playing!')
