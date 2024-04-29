@@ -151,7 +151,7 @@ def hangman():
     guessed_letters = []
     attempts = 6
 
-    print(Back.GREEN + "\nLet's play!" + Back.RESET)
+    print(Fore.GREEN + "\nLet's play!" + Fore.RESET)
     print(display_hangman(attempts))
     # Adjust index for category choice
     print('\nCategory: '
