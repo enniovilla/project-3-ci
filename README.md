@@ -5,15 +5,18 @@ Welcome to the classic word-guessing game of Hangman! Prepare to put your vocabu
 
 See the deployed project here → [The Hangman Game](https://pp3-the-hangman-game-a071f31abd98.herokuapp.com/)
 
+
 ## Project Goals
 
 A hangman game, aside from providing entertainment and enjoyment, serves as an exercise to stimulate logical thinking, creativity, and vocabulary development. It's a great way to practice deduction skills and strategy while having fun trying to guess words and phrases. Additionally, the hangman game can also be used as an educational tool, especially in learning environments, to teach spelling, vocabulary, and reinforce recognition of linguistic patterns.
+
 
 ## Flowchart
 
 I have create a flowchart to offer me visual representation of the processes I would like to implement in the project. It helped me to break down complex problems into smaller, allowing for a systematic approach.
 
 ![Flowchart](documentation/flowchart.png)
+
 
 ## Features
 
@@ -49,6 +52,7 @@ If the player chooses to play again, they will be taken back to the category sel
 
 ![Game end](documentation/8.png)
 
+
 ## Technologies Used
 - Python to develop this project.
 - [Random](https://docs.python.org/3/library/random.html) library to generate randomness in the project.
@@ -58,3 +62,20 @@ If the player chooses to play again, they will be taken back to the category sel
 - [GitHub](https://github.com/) to store files for the website.
 - [Lucidchart](https://www.lucidchart.com/) to create the flowchart.
 - [Heroku](https://www.heroku.com/) to deploy this project.
+
+
+## Deployment
+
+The application has been deployed from GitHub to Heroku by following the steps:
+
+1. Create or log in to your account at [Heroku](https://www.heroku.com/).
+2. Create a new app, add a unique app name and then choose your region.
+3. Click on create app.
+4. Go to "Settings".
+5. Under Config Vars add a key "PORT" and value "8000".
+6. Add required buildpacks (further dependencies). For this project, set it up so Python will be on top and Node.js on bottom.
+7. Go to "Deploy" and select "GitHub" in "Deployment method".
+8. To connect Heroku app to your Github repository code enter your repository name, click "Search" and then "Search" when it shows below.
+9. Choose the branch you want to build your app from.
+10. If preferred, click on "Enable Automatic Deploys", which keeps the app up to date with your GitHub repository.
+11. Wait for the app to build. Once ready you will see the “App was successfully deployed” message and a "View" button to take you to your deployed link.
