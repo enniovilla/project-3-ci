@@ -157,41 +157,47 @@ def hangman():
     print(display_word(word, guessed_letters))
 
     while True:
-        guess = input('\nGuess a letter: ').lower()
+        try:
+            guess = input('\nGuess a letter: ').lower()
 
-        if len(guess) != 1 or not guess.isalpha():
-            # Check if input is a single letter
-            print('Please enter a single letter.')
-            continue
+            if len(guess) != 1 or not guess.isalpha():
+                # Check if input is a single letter
+                print('Please enter a single letter.')
+                continue
 
-        if guess in guessed_letters:
-            # Check if the letter has already been guessed
-            print("You've already guessed that letter.")
-            continue
+            if guess in guessed_letters:
+                # Check if the letter has already been guessed
+                print("You've already guessed that letter.")
+                continue
 
-        guessed_letters.append(guess)
+            guessed_letters.append(guess)
 
-        if guess not in word:
-            # If the guessed letter is not in the word, decrement attempts
-            attempts -= 1
-            if attempts == 0:
-                # If no attempts left, end the game
-                print("Incorrect! You've run out of attempts. Game over!")
-                print(f'The word was: {word}')
-                break
+            if guess not in word:
+                # If the guessed letter is not in the word, decrement attempts
+                attempts -= 1
+                if attempts == 0:
+                    # If no attempts left, end the game
+                    print("Incorrect! You've run out of attempts. Game over!")
+                    print(f'The word was: {word}')
+                    break
+                else:
+                    print(display_hangman(attempts))
+                    print(f'Incorrect! You have {attempts} attempts left.\n')
             else:
-                print(display_hangman(attempts))
-                print(f'Incorrect! You have {attempts} attempts left.\n')
-        else:
-            print('\nCorrect guess!\n')
+                print('\nCorrect guess!\n')
 
-        display = display_word(word, guessed_letters)
-        print(display)
+            display = display_word(word, guessed_letters)
+            print(display)
 
-        if "_" not in display:
-            # If no underscores left, player wins
-            print("Congratulations! You've guessed the word correctly!")
+            if "_" not in display:
+                # If no underscores left, player wins
+                print("Congratulations! You've guessed the word correctly!")
+                break
+        except KeyboardInterrupt:
+            print("\n\nExiting the game.")
             break
+        except Exception as e:
+            print(f"An error occurred: {e}. Please try again.")
 
     # Ask if the player wants to play again
     while True:
