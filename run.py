@@ -60,7 +60,7 @@ def display_hangman(attempts):
            |      O
            |     \|/
            |      |
-           |     / 
+           |     /
         """,
         r"""
            --------
@@ -68,7 +68,7 @@ def display_hangman(attempts):
            |      O
            |     \|/
            |      |
-           |      
+           |
         """,
         r"""
            --------
@@ -76,7 +76,7 @@ def display_hangman(attempts):
            |      O
            |     \|
            |      |
-           |     
+           |
         """,
         r"""
            --------
@@ -84,23 +84,23 @@ def display_hangman(attempts):
            |      O
            |      |
            |      |
-           |     
+           |
         """,
         r"""
            --------
            |      |
            |      O
-           |    
-           |      
-           |     
+           |
+           |
+           |
         """,
         r"""
            --------
            |      |
-           |      
-           |    
-           |      
-           |     
+           |
+           |
+           |
+           |
         """
     ]
 
