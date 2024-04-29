@@ -154,7 +154,8 @@ def hangman():
     print(Back.GREEN + "\nLet's play!" + Back.RESET)
     print(display_hangman(attempts))
     # Adjust index for category choice
-    print(f'\nCategory: {Fore.YELLOW}{categories[category_choice-1][1]}{Fore.RESET}')
+    print('\nCategory: '
+          f'{Fore.YELLOW}{categories[category_choice-1][1]}{Fore.RESET}')
     print(display_word(word, guessed_letters))
 
     while True:
@@ -168,7 +169,9 @@ def hangman():
 
             if guess in guessed_letters:
                 # Check if the letter has already been guessed
-                print(Fore.CYAN + "You've already guessed that letter." + Fore.RESET)
+                print(Fore.CYAN +
+                "You've already guessed that letter." +
+                Fore.RESET)
                 continue
 
             guessed_letters.append(guess)
@@ -178,12 +181,16 @@ def hangman():
                 attempts -= 1
                 if attempts == 0:
                     # If no attempts left, end the game
-                    print(f"{Fore.RED}Incorrect!{Fore.RESET} You've run out of attempts. {Back.RED}Game over!{Back.RESET}")
+                    print(f'{Fore.RED}Incorrect!{Fore.RESET} '
+                          "You've run out of attempts. "
+                          f"{Back.RED}Game over!{Back.RESET}")
                     print(f'The word was: {Fore.YELLOW}{word}{Fore.RESET}')
                     break
                 else:
                     print(display_hangman(attempts))
-                    print(f'{Fore.RED}Incorrect!{Fore.RESET} You have {Fore.YELLOW}{attempts}{Fore.RESET} attempts left.\n')
+                    print(f'{Fore.RED}Incorrect!{Fore.RESET} '
+                          f'You have {Fore.YELLOW}{attempts}{Fore.RESET}'
+                          ' attempts left.\n')
             else:
                 print(Fore.GREEN + '\nCorrect guess!\n' + Fore.RESET)
 
@@ -192,7 +199,9 @@ def hangman():
 
             if "_" not in display:
                 # If no underscores left, player wins
-                print(Back.GREEN + "Congratulations! You've guessed the word correctly!" + Back.RESET)
+                print(Back.GREEN +
+                "Congratulations! You've guessed the word correctly!" +
+                Back.RESET)
                 break
         except KeyboardInterrupt:
             print("\n\nExiting the game.")
