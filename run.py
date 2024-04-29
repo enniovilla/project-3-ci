@@ -1,4 +1,5 @@
 import random
+from colorama import Fore, Back, Style
 
 
 def choose_word(category):
@@ -150,10 +151,10 @@ def hangman():
     guessed_letters = []
     attempts = 6
 
-    print("\nLet's play!")
+    print(Back.GREEN + "\nLet's play!" + Back.RESET)
     print(display_hangman(attempts))
     # Adjust index for category choice
-    print(f'\nCategory: {categories[category_choice-1][1]}')
+    print(f'\nCategory: {Fore.YELLOW}{categories[category_choice-1][1]}{Fore.RESET}')
     print(display_word(word, guessed_letters))
 
     while True:
@@ -162,12 +163,12 @@ def hangman():
 
             if len(guess) != 1 or not guess.isalpha():
                 # Check if input is a single letter
-                print('Please enter a single letter.')
+                print(Fore.CYAN + 'Please enter a single letter.' + Fore.RESET)
                 continue
 
             if guess in guessed_letters:
                 # Check if the letter has already been guessed
-                print("You've already guessed that letter.")
+                print(Fore.CYAN + "You've already guessed that letter." + Fore.RESET)
                 continue
 
             guessed_letters.append(guess)
@@ -177,21 +178,21 @@ def hangman():
                 attempts -= 1
                 if attempts == 0:
                     # If no attempts left, end the game
-                    print("Incorrect! You've run out of attempts. Game over!")
-                    print(f'The word was: {word}')
+                    print(f"{Fore.RED}Incorrect!{Fore.RESET} You've run out of attempts. {Back.RED}Game over!{Back.RESET}")
+                    print(f'The word was: {Fore.YELLOW}{word}{Fore.RESET}')
                     break
                 else:
                     print(display_hangman(attempts))
-                    print(f'Incorrect! You have {attempts} attempts left.\n')
+                    print(f'{Fore.RED}Incorrect!{Fore.RESET} You have {Fore.YELLOW}{attempts}{Fore.RESET} attempts left.\n')
             else:
-                print('\nCorrect guess!\n')
+                print(Fore.GREEN + '\nCorrect guess!\n' + Fore.RESET)
 
             display = display_word(word, guessed_letters)
             print(display)
 
             if "_" not in display:
                 # If no underscores left, player wins
-                print("Congratulations! You've guessed the word correctly!")
+                print(Back.GREEN + "Congratulations! You've guessed the word correctly!" + Back.RESET)
                 break
         except KeyboardInterrupt:
             print("\n\nExiting the game.")
@@ -211,8 +212,8 @@ def hangman():
         print('\n')
         hangman()
     else:
-        print('\nThank you for playing!')
+        print(Fore.YELLOW + '\nThank you for playing!' + Fore.RESET)
 
 
-print('Welcome to The Hangman Game!\n')
+print(Fore.YELLOW + 'Welcome to The Hangman Game!\n' + Fore.RESET)
 hangman()
