@@ -14,3 +14,37 @@ A hangman game, aside from providing entertainment and enjoyment, serves as an e
 I have create a flowchart to offer me visual representation of the processes I would like to implement in the project. It helped me to break down complex problems into smaller, allowing for a systematic approach.
 
 ![Flowchart](documentation/flowchart.png)
+
+## Features
+
+The application starts out very simple, by instructing the player to select a category in order to start the game to discover a word.
+
+![Welcome](documentation/1.png)
+
+If the player enters any character that is not a number and is not within the shown range, they will receive a warning to choose a correct category.
+
+![Incorrect category](documentation/2.png)
+
+When the player chooses the desired category, a random word will be given to them and they will then see various underscores according to the number of characters in the word, the category of the word and an input telling them to guess a letter. A gallows will also be shown, just like in the original game.
+
+![Game begin](documentation/3.png)
+
+If a letter is matched, the player will receive a message informing them that one of the letters of the word has been found, but if the player gets it wrong, they will be warned that the letter is incorrect and that they have a few attempts left and a limb will be attached to the body of the hanged man.
+
+![Progress message](documentation/4.png)
+
+Whenever the player tries to enter two or more letters together, symbols, numbers, whitespace or any other character that is not a single letter, they will be warned that this action cannot be performed.
+
+![Single letter](documentation/5.png)
+
+When the player completes the word, a congratulatory message will be displayed, as well as a question asking if they would like to play again.
+
+![Complete word](documentation/6.png)
+
+However, if the player uses all their attempts and doesn't guess the word correctly, the game will be over. They will also be asked if they want to play again.
+
+![Game over](documentation/7.png)
+
+If the player chooses to play again, they will be taken back to the category selection. If they choose not to play again, the game will end and they will see the "thank you for playing" message.
+
+![Game end](documentation/8.png)
