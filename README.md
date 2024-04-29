@@ -48,3 +48,13 @@ However, if the player uses all their attempts and doesn't guess the word correc
 If the player chooses to play again, they will be taken back to the category selection. If they choose not to play again, the game will end and they will see the "thank you for playing" message.
 
 ![Game end](documentation/8.png)
+
+## Technologies Used
+- Python to develop this project.
+- [Random](https://docs.python.org/3/library/random.html) library to generate randomness in the project.
+- [Colorama](https://pypi.org/project/colorama/) to style the text in the terminal.
+- [Git](https://git-scm.com/) for version control.
+- [GitPod](https://www.gitpod.io/) as IDE to create this project.
+- [GitHub](https://github.com/) to store files for the website.
+- [Lucidchart](https://www.lucidchart.com/) to create the flowchart.
+- [Heroku](https://www.heroku.com/) to deploy this project.
