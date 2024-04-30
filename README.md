@@ -79,3 +79,13 @@ The application has been deployed from GitHub to Heroku by following the steps:
 9. Choose the branch you want to build your app from.
 10. If preferred, click on "Enable Automatic Deploys", which keeps the app up to date with your GitHub repository.
 11. Wait for the app to build. Once ready you will see the “App was successfully deployed” message and a "View" button to take you to your deployed link.
+
+
+## Bugs
+
+The project was submitted without any bugs found, however before submission, the following problems were fixed:
+
+| Issue | Fix |
+| :--- | :--- |
+| The colors added with Colorama would appear in the terminal, but not in the deployed project. | Added Colorama to requirements.txt document. |
+| Colorama would color all the code, not just the area it was supposed to color. | Added `Fore.RESET` after every colorama addition to stop the color spreading. |
