@@ -62,6 +62,8 @@ If the player chooses to play again, they will be taken back to the category sel
 - [GitHub](https://github.com/) to store files for the website.
 - [Lucidchart](https://www.lucidchart.com/) to create the flowchart.
 - [Heroku](https://www.heroku.com/) to deploy this project.
+- [Python Tutor](https://pythontutor.com/) to debug my code.
+- [Python Validator](https://pep8ci.herokuapp.com/#) by Code Institute to catch some errors and validate my code.
 
 
 ## Deployment
