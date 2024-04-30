@@ -52,6 +52,10 @@ If the player chooses to play again, they will be taken back to the category sel
 
 ![Game end](documentation/8.png)
 
+In addition to the python project I also created a simple 404 error page.
+
+![404 Error page](documentation/404.png)
+
 
 ## Technologies Used
 - Python to develop this project.
