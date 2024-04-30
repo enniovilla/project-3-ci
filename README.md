@@ -87,6 +87,11 @@ The application has been deployed from GitHub to Heroku by following the steps:
 11. Wait for the app to build. Once ready you will see the “App was successfully deployed” message and a "View" button to take you to your deployed link.
 
 
+## Tests
+
+Performed tests can be found in [TESTING.md](TESTING.md).
+
+
 ## Bugs
 
 The project was submitted without any bugs found, however before submission, the following problems were fixed:
