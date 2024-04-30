@@ -93,6 +93,13 @@ The project was submitted without any bugs found, however before submission, the
 
 ## Credits
 
+### Learning Methods and Code Used
+
+* [W3Schools](https://www.w3schools.com/) and the [Python official documentation](https://docs.python.org/3/index.html) were used for general queries and as references to check syntax for coding.
+* [Kite](https://youtu.be/m4nEnsavl6w?si=Ui5F1RSyijoSaqpE) and [Shaun Halverson](https://youtu.be/pFvSb7cb_Us?si=YHWWJJYFXczljek3) videos helped me with the hangman game's functions.
+* With [Tech With Tim](https://youtu.be/u51Zjlnui4Y?si=xJkWXebLSjXS8wOq)'s video I learned how to work with Colorama.
+* To debug my project and to fix some minor errors after validation I looked for tips on [Stack Overflow](https://stackoverflow.com/).
+
 ### Content
 
 I requested [Chat GPT](https://chat.openai.com/) to generate lists of words I could use in the game.
