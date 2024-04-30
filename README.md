@@ -26,43 +26,63 @@ I have create a flowchart to offer me visual representation of the processes I w
 
 ![Flowchart](documentation/flowchart.png)
 
+[Back to top](<#contents>)
+
 ## Features
 
 The application starts out very simple, by instructing the player to select a category in order to start the game to discover a word.
 
 ![Welcome](documentation/1.png)
 
+[Back to top](<#contents>)
+
 If the player enters any character that is not a number and is not within the shown range, they will receive a warning to choose a correct category.
 
 ![Incorrect category](documentation/2.png)
+
+[Back to top](<#contents>)
 
 When the player chooses the desired category, a random word will be given to them and they will then see various underscores according to the number of characters in the word, the category of the word and an input telling them to guess a letter. A gallows will also be shown, just like in the original game.
 
 ![Game begin](documentation/3.png)
 
+[Back to top](<#contents>)
+
 If a letter is matched, the player will receive a message informing them that one of the letters of the word has been found, but if the player gets it wrong, they will be warned that the letter is incorrect and that they have a few attempts left and a limb will be attached to the body of the hanged man.
 
 ![Progress message](documentation/4.png)
+
+[Back to top](<#contents>)
 
 Whenever the player tries to enter two or more letters together, symbols, numbers, whitespace or any other character that is not a single letter, they will be warned that this action cannot be performed.
 
 ![Single letter](documentation/5.png)
 
+[Back to top](<#contents>)
+
 When the player completes the word, a congratulatory message will be displayed, as well as a question asking if they would like to play again.
 
 ![Complete word](documentation/6.png)
+
+[Back to top](<#contents>)
 
 However, if the player uses all their attempts and doesn't guess the word correctly, the game will be over. They will also be asked if they want to play again.
 
 ![Game over](documentation/7.png)
 
+[Back to top](<#contents>)
+
 If the player chooses to play again, they will be taken back to the category selection. If they choose not to play again, the game will end and they will see the "thank you for playing" message.
 
 ![Game end](documentation/8.png)
 
+[Back to top](<#contents>)
+
 In addition to the python project I also created a simple 404 error page.
 
 ![404 Error page](documentation/404.png)
+
+[Back to top](<#contents>)
 
 ## Technologies Used
 - Python to develop this project.
@@ -75,6 +95,8 @@ In addition to the python project I also created a simple 404 error page.
 - [Heroku](https://www.heroku.com/) to deploy this project.
 - [Python Tutor](https://pythontutor.com/) to debug my code.
 - [Python Validator](https://pep8ci.herokuapp.com/#) by Code Institute to catch some errors and validate my code.
+
+[Back to top](<#contents>)
 
 ## Deployment
 
@@ -92,6 +114,8 @@ The application has been deployed from GitHub to Heroku by following the steps:
 10. If preferred, click on "Enable Automatic Deploys", which keeps the app up to date with your GitHub repository.
 11. Wait for the app to build. Once ready you will see the “App was successfully deployed” message and a "View" button to take you to your deployed link.
 
+[Back to top](<#contents>)
+
 ## Tests
 
 Performed tests can be found in [TESTING.md](TESTING.md).
@@ -104,6 +128,8 @@ The project was submitted without any bugs found, however before submission, the
 | :--- | :--- |
 | The colors added with Colorama would appear in the terminal, but not in the deployed project. | Added Colorama to requirements.txt document. |
 | Colorama would color all the code, not just the area it was supposed to color. | Added `Fore.RESET` after every colorama addition to stop the color spreading. |
+
+[Back to top](<#contents>)
 
 ## Credits
 
@@ -124,3 +150,5 @@ I would like to acknowledge:
 
 - Kay Welfare - My cohort facilitator.
 - Jubril Akolade - My Code Institute mentor.
+
+[Back to top](<#contents>)
