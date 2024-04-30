@@ -28,3 +28,13 @@ Tests were carried out during the creation of the project and at the end a gener
 | Play again | The player cannot input whitespace | Works as expected |
 | Play again | Take the player back to the category selection if 'yes' is entered | Works as expected |
 | Play again | End the game if 'no' is entered | Works as expected |
+
+
+## Browser Testing
+
+| Broswer | Result |
+| --- | --- |
+| Chrome | Works as expected |
+| Edge | Works as expected |
+| Firefox | Works as expected |
+| Opera | Works as expected |
