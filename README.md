@@ -22,7 +22,7 @@ A hangman game, aside from providing entertainment and enjoyment, serves as an e
 
 ## Flowchart
 
-I have create a flowchart to offer me visual representation of the processes I would like to implement in the project. It helped me to break down complex problems into smaller, allowing for a systematic approach.
+I have created a flowchart to offer me visual representation of the processes I would like to implement in the project. It helped me to break down complex problems into smaller ones, allowing for a systematic approach.
 
 ![Flowchart](documentation/flowchart.png)
 
@@ -30,7 +30,7 @@ I have create a flowchart to offer me visual representation of the processes I w
 
 ## Features
 
-The application starts out very simple, by instructing the player to select a category in order to start the game to discover a word.
+The application starts very simple, by instructing the player to select a category to start the game to discover a word.
 
 ![Welcome](documentation/1.png)
 
@@ -54,7 +54,7 @@ If a letter is matched, the player will receive a message informing them that on
 
 [Back to top](<#contents>)
 
-Whenever the player tries to enter two or more letters together, symbols, numbers, whitespace or any other character that is not a single letter, they will be warned that this action cannot be performed.
+Whenever the player tries to enter two or more letters together, symbols, numbers, whitespace, or any other character that is not a single letter, they will be warned that this action cannot be performed.
 
 ![Single letter](documentation/5.png)
 
@@ -78,7 +78,7 @@ If the player chooses to play again, they will be taken back to the category sel
 
 [Back to top](<#contents>)
 
-In addition to the python project I also created a simple 404 error page.
+In addition to the Python project I also created a simple 404 error page.
 
 ![404 Error page](documentation/404.png)
 
@@ -95,6 +95,7 @@ In addition to the python project I also created a simple 404 error page.
 - [Heroku](https://www.heroku.com/) to deploy this project.
 - [Python Tutor](https://pythontutor.com/) to debug my code.
 - [Python Validator](https://pep8ci.herokuapp.com/#) by Code Institute to catch some errors and validate my code.
+- [Grammarly](https://www.grammarly.com/) to check spelling mistakes.
 
 [Back to top](<#contents>)
 
@@ -104,7 +105,7 @@ The application has been deployed from GitHub to Heroku by following the steps:
 
 1. Create or log in to your account at [Heroku](https://www.heroku.com/).
 2. Create a new app, add a unique app name and then choose your region.
-3. Click on create app.
+3. Click on Create App.
 4. Go to "Settings".
 5. Under Config Vars add a key "PORT" and value "8000".
 6. Add required buildpacks (further dependencies). For this project, set it up so Python will be on top and Node.js on bottom.
@@ -149,6 +150,6 @@ I requested [Chat GPT](https://chat.openai.com/) to generate lists of words I co
 I would like to acknowledge:
 
 - Kay Welfare - My cohort facilitator at Code Institute for the tips they give me and my colleagues every weekly meeting.
-- Jubril Akolade - My Code Institute mentor for the guidance and sharing his knowledge.
+- Jubril Akolade - My Code Institute mentor for the guidance and sharing of his knowledge.
 
 [Back to top](<#contents>)
