@@ -38,3 +38,16 @@ Tests were carried out during the creation of the project and at the end a gener
 | Edge | Works as expected |
 | Firefox | Works as expected |
 | Opera | Works as expected |
+
+
+## Automated Validation
+
+I used [Code Institute's validator](https://pep8ci.herokuapp.com/) to double-check my Python code and the project was submitted without errors.
+
+![Python validation](documentation/python-validation.png)
+
+I also validated the 404 error page html and this was the result:
+
+![HTML validation](documentation/html-validation.png)
+
+[Back to README](README.md)
