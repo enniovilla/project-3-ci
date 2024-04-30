@@ -5,18 +5,26 @@ Welcome to the classic word-guessing game of Hangman! Prepare to put your vocabu
 
 See the deployed project here → [The Hangman Game](https://pp3-the-hangman-game-a071f31abd98.herokuapp.com/)
 
+## Contents
+
+* [Project Goals](#project-goals)
+* [Flowchart](#flowchart)
+* [Features](#features)
+* [Technologies Used](#technologies-used)
+* [Deployment](#deployment)
+* [Tests](#tests)
+* [Bugs](#bugs)
+* [Credits](#credits)
 
 ## Project Goals
 
 A hangman game, aside from providing entertainment and enjoyment, serves as an exercise to stimulate logical thinking, creativity, and vocabulary development. It's a great way to practice deduction skills and strategy while having fun trying to guess words and phrases. Additionally, the hangman game can also be used as an educational tool, especially in learning environments, to teach spelling, vocabulary, and reinforce recognition of linguistic patterns.
-
 
 ## Flowchart
 
 I have create a flowchart to offer me visual representation of the processes I would like to implement in the project. It helped me to break down complex problems into smaller, allowing for a systematic approach.
 
 ![Flowchart](documentation/flowchart.png)
-
 
 ## Features
 
@@ -56,7 +64,6 @@ In addition to the python project I also created a simple 404 error page.
 
 ![404 Error page](documentation/404.png)
 
-
 ## Technologies Used
 - Python to develop this project.
 - [Random](https://docs.python.org/3/library/random.html) library to generate randomness in the project.
@@ -68,7 +75,6 @@ In addition to the python project I also created a simple 404 error page.
 - [Heroku](https://www.heroku.com/) to deploy this project.
 - [Python Tutor](https://pythontutor.com/) to debug my code.
 - [Python Validator](https://pep8ci.herokuapp.com/#) by Code Institute to catch some errors and validate my code.
-
 
 ## Deployment
 
@@ -86,11 +92,9 @@ The application has been deployed from GitHub to Heroku by following the steps:
 10. If preferred, click on "Enable Automatic Deploys", which keeps the app up to date with your GitHub repository.
 11. Wait for the app to build. Once ready you will see the “App was successfully deployed” message and a "View" button to take you to your deployed link.
 
-
 ## Tests
 
 Performed tests can be found in [TESTING.md](TESTING.md).
-
 
 ## Bugs
 
@@ -100,7 +104,6 @@ The project was submitted without any bugs found, however before submission, the
 | :--- | :--- |
 | The colors added with Colorama would appear in the terminal, but not in the deployed project. | Added Colorama to requirements.txt document. |
 | Colorama would color all the code, not just the area it was supposed to color. | Added `Fore.RESET` after every colorama addition to stop the color spreading. |
-
 
 ## Credits
 
