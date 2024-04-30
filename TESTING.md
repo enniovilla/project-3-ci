@@ -3,6 +3,12 @@
 
 See the deployed project here → [The Hangman Game](https://pp3-the-hangman-game-a071f31abd98.herokuapp.com/)
 
+## Contents
+
+* [Manual Testing](#manual-testing)
+* [Browser Testing](#browser-testing)
+* [Automated Testing](#automated-testing)
+
 ## Manual Testing
 
 Tests were carried out during the creation of the project and at the end a general test was carried out to ensure that the program was working correctly.
@@ -40,7 +46,7 @@ Tests were carried out during the creation of the project and at the end a gener
 | Opera | Works as expected |
 
 
-## Automated Validation
+## Automated Testing
 
 I used [Code Institute's validator](https://pep8ci.herokuapp.com/) to double-check my Python code and the project was submitted without errors.
 
@@ -50,4 +56,6 @@ I also validated the 404 error page html and this was the result:
 
 ![HTML validation](documentation/html-validation.png)
 
-[Back to README](README.md)
+
+[Back to top](<#contents>)<br><br>
+[Back to README.md](README.md)
