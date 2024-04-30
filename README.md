@@ -89,3 +89,17 @@ The project was submitted without any bugs found, however before submission, the
 | :--- | :--- |
 | The colors added with Colorama would appear in the terminal, but not in the deployed project. | Added Colorama to requirements.txt document. |
 | Colorama would color all the code, not just the area it was supposed to color. | Added `Fore.RESET` after every colorama addition to stop the color spreading. |
+
+
+## Credits
+
+### Content
+
+I requested [Chat GPT](https://chat.openai.com/) to generate lists of words I could use in the game.
+
+### Acknowledgments
+
+I would like to acknowledge:
+
+- Kay Welfare - My cohort facilitator.
+- Jubril Akolade - My Code Institute mentor.
