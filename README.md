@@ -148,7 +148,7 @@ I requested [Chat GPT](https://chat.openai.com/) to generate lists of words I co
 
 I would like to acknowledge:
 
-- Kay Welfare - My cohort facilitator.
-- Jubril Akolade - My Code Institute mentor.
+- Kay Welfare - My cohort facilitator at Code Institute for the tips they give me and my colleagues every weekly meeting.
+- Jubril Akolade - My Code Institute mentor for the guidance and sharing his knowledge.
 
 [Back to top](<#contents>)
