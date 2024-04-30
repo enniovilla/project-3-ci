@@ -170,8 +170,8 @@ def hangman():
             if guess in guessed_letters:
                 # Check if the letter has already been guessed
                 print(Fore.CYAN +
-                "You've already guessed that letter." +
-                Fore.RESET)
+                      "You've already guessed that letter." +
+                      Fore.RESET)
                 continue
 
             guessed_letters.append(guess)
@@ -200,8 +200,8 @@ def hangman():
             if "_" not in display:
                 # If no underscores left, player wins
                 print(Back.GREEN +
-                "Congratulations! You've guessed the word correctly!" +
-                Back.RESET)
+                      "Congratulations! You've guessed the word correctly!" +
+                      Back.RESET)
                 break
         except KeyboardInterrupt:
             print("\n\nExiting the game.")
